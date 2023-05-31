@@ -1,0 +1,8 @@
+.NavBar a {
+    color:black;
+    padding: 5px;
+}
+
+.NavBar a.active {
+    color:blue;
+}
