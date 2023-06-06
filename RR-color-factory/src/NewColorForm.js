@@ -6,6 +6,7 @@ const NewColorForm = ({ addColor }) => {
     const history = useHistory();
    
     const handleChange = (e) => {
+        e.persist()
         updateForm((data) => ({ ...data, [e.target.name]: e.target.value }));
     }
 
@@ -34,6 +35,7 @@ const NewColorForm = ({ addColor }) => {
                 <div className="NewColorForm-nameInput">
                     <label className="NewColorForm-label" htmlFor="name">Color Name: </label>
                     <input 
+                        type="text"
                         name="name" 
                         id="name" 
                         placeholder="Enter a name"
